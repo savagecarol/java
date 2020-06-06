@@ -1,0 +1,19 @@
+import java.util.*;
+class forloop
+{
+ public static void main(String args[])
+    {
+     do
+        {
+ Scanner sc=new Scanner(System.in);
+      System.out.println("Enter the no. ");
+      int n=sc.nextInt();char ch;
+       for(i=1;i<=10;i++)
+             {
+                System.out.println(n*i);      
+            }
+    Sysem.out.println("type y to print new table");
+     }
+     while(ch=="y");
+    }
+}
