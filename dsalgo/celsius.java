@@ -18,8 +18,23 @@ class celsius
 }
 class cltof
 {
-    public double convert(int c)
+    public int convert(int x)
     {
-        return (c*(9/5))+32;
+        int count=0;
+        System.out.println(count);
+        int res=0;
+        while(x>0)
+        {
+            if((x&1)==1)
+                res++;
+            else
+               res=0;
+            if(res>=count)
+               count=res;
+            x=x>>1;
+            System.out.println(x);
+           }
+           return count;
+        
     }
 }
